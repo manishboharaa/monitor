@@ -1,17 +1,5 @@
  <?php
- /*
-  The aim is to create a functional server monitor based on the one
-  showed on Mark Zuckerberg's monitor on The Social Network movie.
  
-  Run so:
-  php monitor.php
-  
-  Notes:
-   - The server LogFormat must be "Common Log Format" (%h %^[%d:%^] "%r" %s %b)
-   - The server date format must be $d/%b/%Y
-   
- 
-*/
 if($argc<2) {
 	die("Usage: php ".basename(__FILE__)."  <access log path> [--update <update interval in seconds>] [--time-limit <time limit in seconds for listing request>] [--clients-limit <show limit clients>]\n");
 }
